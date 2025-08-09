@@ -1,7 +1,5 @@
 import MeCab, unidic_lite
 from datasets import load_dataset
-from jptoken import JpTextDataset
-from torch.utils.data import DataLoader
 
 ds = load_dataset('globis-university/aozorabunko-clean')
 tagger = MeCab.Tagger(f"-Owakati -d {unidic_lite.DICDIR}")
